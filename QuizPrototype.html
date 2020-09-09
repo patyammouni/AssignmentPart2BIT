@@ -109,8 +109,16 @@ margin-top: 20px;
                    
                    
                    result = Q1 + Q2 + Q3 + Q4;
+
                    
                 document.getElementById("grade").innerHTML = result;
+               
+                if (result == 0) {result2 = "Fail"};
+                if (result == 25) {result2 = "Fail"};
+                if (result == 50) {result2 = "Pass"};
+                if (result == 75) {result2 = "Pass"};
+                if (result == 100) {result2 = "Perfect"};
+                document.getElementById("grade2").innerHTML = result2; 
                    
             
             
@@ -119,7 +127,7 @@ margin-top: 20px;
             
             </script>
             
-            
+            <!-- code based on code found on https://codeactually.com/interactivequiz.html, Cindy Royal 2018-->
         </body>
 
 </body>
