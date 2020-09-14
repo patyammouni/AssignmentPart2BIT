@@ -58,7 +58,7 @@ body {
     float: right;
 }
 
-.codeclan-navs a:hover, .dropdown .dropbtn:hover {
+.codeclan-header a:hover, .codeclan-navs a:hover, .dropdown .dropbtn:hover {
     color: white;
     transition: color 500ms;
 }
