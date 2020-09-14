@@ -15,13 +15,14 @@ body {
     height: 40px;
     padding-top: 20px;
     background: #383b38;
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	height: 100px;
     margin: 0 5% 2.50% 5%;
 }
 
 .codeclan-header {
-    display:inline block;
+    display: block;
     
 }
 
@@ -32,11 +33,9 @@ body {
     font-weight: bold;
     text-decoration: none;
 	background: #383b38;
-	top: 0px;
 	z-index: 10;
 	height: 100px;
     position:fixed;
-	width: 100%;
 }
 
 .codeclan-navs {
@@ -52,11 +51,11 @@ body {
 .codeclan-navs a {
     color: #009999;
     text-decoration: none;
+	font-size: 20px;
     margin-right: 12px;
     text-align: right;
 	z-index: 10;
     float: right;
-    
 }
 
 .codeclan-navs a:hover, .dropdown .dropbtn:hover {
