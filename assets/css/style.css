@@ -23,6 +23,7 @@ body {
 
 .codeclan-header {
     display: block;
+	z-index: 10;
     
 }
 
@@ -34,7 +35,6 @@ body {
     text-decoration: none;
 	background: #383b38;
 	z-index: 10;
-	height: 100px;
     position:fixed;
 }
 
@@ -44,8 +44,8 @@ body {
     padding: 6px 0 0 0;
     position: fixed;
 	z-index: 10;
-    padding-left: 230px;
-    
+	height: 50px;
+	left: 500px;
 }
 
 .codeclan-navs a {
@@ -61,6 +61,7 @@ body {
 .codeclan-header a:hover, .codeclan-navs a:hover, .dropdown .dropbtn:hover {
     color: white;
     transition: color 500ms;
+	cursor: pointer;
 }
 
 #page-wrapper {
