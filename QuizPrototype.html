@@ -128,6 +128,27 @@ margin-top: 20px;
             </script>
             
             <!-- code based on code found on https://codeactually.com/interactivequiz.html, Cindy Royal 2018-->
+            <br>
+       
+            <div>
+                <button onclick="startQuiz()">Start Quizz</button>
+
+                <script>
+                function startQuiz() {
+                  var x = document.createElement("FORM");
+                  x.setAttribute("id", "myForm");
+                  document.body.appendChild(x);
+                
+                  var y = document.createElement("INPUT");
+                  y.setAttribute("type", "text");
+                  y.setAttribute("value", "Donald");
+                  document.getElementById("myForm").appendChild(y);
+                }
+                </script>
+
+        </div>
+        
+        
         </body>
 
 </body>
