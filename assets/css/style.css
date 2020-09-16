@@ -147,6 +147,9 @@ p, li {
     text-align: center;
     color: #383b38;
 }
+#githubtab {
+	text-align: center;
+}
 
 .sub-topic {
     font-weight: 900;
