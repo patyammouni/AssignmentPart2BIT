@@ -1,4 +1,4 @@
-<!DOCTYPE>
+﻿<!DOCTYPE>
 <html>
 <head>
 
@@ -62,102 +62,108 @@ margin-top: 20px;
 
 
     <body>
-        <div id="main"><!-- open main div -->
-        
-        <h1>JavaScript Quiz</h1>
-        <form id="form1">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
 
-            <h2>Question 1</h2>
-            <label for="var_string"><input type="radio" name="Q1" value="0" id="var_string" />xxxx</label>
-            <label for="var_join"><input type="radio" name="Q1" value="0" id="var_join" />xxxx</label>
-            <label for="var_info"><input type="radio" name="Q1" value="25" id="var_info" />Correct</label>
-            <label for="var_condition"><input type="radio" name="Q1" value="0" id="var_condition"/>xxxx</label>
-            
-            <h2>Question 2</h2>
-            <label for="sub_string"><input type="radio" name="Q2" value="25" id="sub_string"/>Correct</label>
-            <label for="sub_join"><input type="radio" name="Q2" value="0" id="sub_join"/>xxxx</label>
-            <label for="sub_info"><input type="radio" name="Q2" value="0" id="sub_info" />xxxx</label>
-            <label for="sub_condition"><input type="radio" name="Q2" value="0" id="sub_condition" />xxxx</label>
-            
-            <h2>Question 3</h2>
-            <label for="cat_string"><input type="radio" name="Q3" value="0" id="cat_string" />xxxx</label>
-            <label for="cat_join"><input type="radio" name="Q3" value="25" id="cat_join" />Correct</label>
-            <label for="cat_info"><input type="radio" name="Q3" value="0" id="cat_info" />xxxx</label>
-            <label for="cat_condition"><input type="radio" name="Q3" value="0" id="cat_condition" />xxxx</label>
-            
-            <h2>Question 3</h2>
-            <label for="if_string"><input type="radio" name="Q4" value="0" id="if_string" />xxxx</label>
-            <label for="if_join"><input type="radio" name="Q4" value="0" id="if_join" />xxxx</label>
-            <label for="if_info"><input type="radio" name="Q4" value="0" id="if_info" />xxxx</label>
-            <label for="if_condition"><input type="radio" name="Q4"  value="25" id="if_condition" />Correct</label>
-            
-            <button type="submit" value="Submit">Submit</button>
-            
+            <h1>Quiz</h1>
+            <form id="form1">
+
+                <h2>Question 1</h2>
+                <label for="var_string"><input type="radio" name="Q1" value="0" id="var_string" />xxxx</label>
+                <label for="var_join"><input type="radio" name="Q1" value="0" id="var_join" />xxxx</label>
+                <label for="var_info"><input type="radio" name="Q1" value="25" id="var_info" />Correct</label>
+                <label for="var_condition"><input type="radio" name="Q1" value="0" id="var_condition" />xxxx</label>
+
+                <h2>Question 2</h2>
+                <label for="sub_string"><input type="radio" name="Q2" value="25" id="sub_string" />Correct</label>
+                <label for="sub_join"><input type="radio" name="Q2" value="0" id="sub_join" />xxxx</label>
+                <label for="sub_info"><input type="radio" name="Q2" value="0" id="sub_info" />xxxx</label>
+                <label for="sub_condition"><input type="radio" name="Q2" value="0" id="sub_condition" />xxxx</label>
+
+                <h2>Question 3</h2>
+                <label for="cat_string"><input type="radio" name="Q3" value="0" id="cat_string" />xxxx</label>
+                <label for="cat_join"><input type="radio" name="Q3" value="25" id="cat_join" />Correct</label>
+                <label for="cat_info"><input type="radio" name="Q3" value="0" id="cat_info" />xxxx</label>
+                <label for="cat_condition"><input type="radio" name="Q3" value="0" id="cat_condition" />xxxx</label>
+
+                <h2>Question 3</h2>
+                <label for="if_string"><input type="radio" name="Q4" value="0" id="if_string" />xxxx</label>
+                <label for="if_join"><input type="radio" name="Q4" value="0" id="if_join" />xxxx</label>
+                <label for="if_info"><input type="radio" name="Q4" value="0" id="if_info" />xxxx</label>
+                <label for="if_condition"><input type="radio" name="Q4" value="25" id="if_condition" />Correct</label>
+
+                <button type="submit" value="Submit">Submit</button>
+
             </form>
 
             <p>Your grade is: <span id="grade">__</span></p>
-           <p id="grade2"></p>
+            <p id="grade2"></p>
 
-           <br>
-       
-            <div>
+            <br>
+
+         <!--   <div>
                 <button onclick="startQuiz()">Start Quiz</button>
                 <br>
                 <br>
                 <br>
                 <br>
-                
+
 
                 <script>
-                function startQuiz() {
-                  var x = document.createElement("FORM");
-                  x.setAttribute("id", "myForm");
-                  document.body.appendChild(x);
-                
-                  var y = document.createElement("INPUT");
-                  y.setAttribute("type", "radio");
-                  y.setAttribute("value", "Donald");
-                  y.setAttribute("name", "Q4");
-                  document.getElementById("myForm").appendChild(y);
-                }
+                    function startQuiz() {
+                        var x = document.createElement("FORM");
+                        x.setAttribute("id", "myForm");
+                        document.body.appendChild(x);
+
+                        var y = document.createElement("INPUT");
+                        y.setAttribute("type", "radio");
+                        y.setAttribute("value", "Donald");
+                        y.setAttribute("name", "Q4");
+                        document.getElementById("myForm").appendChild(y);
+                    }
                 </script>
 
-        </div>
+            </div>
+             -->
 
-        
         </div><!-- close main div -->
         <script>
-            document.getElementById("form1").onsubmit=function() {
-                   Q1 = parseInt(document.querySelector('input[name = "Q1"]:checked').value);
-                   Q2 = parseInt(document.querySelector('input[name = "Q2"]:checked').value);
-                   Q3 = parseInt(document.querySelector('input[name = "Q3"]:checked').value);
-                   Q4 = parseInt(document.querySelector('input[name = "Q4"]:checked').value);
-                   
-                   
-                   result = Q1 + Q2 + Q3 + Q4;
+            document.getElementById("form1").onsubmit = function () {
+                Q1 = parseInt(document.querySelector('input[name = "Q1"]:checked').value);
+                Q2 = parseInt(document.querySelector('input[name = "Q2"]:checked').value);
+                Q3 = parseInt(document.querySelector('input[name = "Q3"]:checked').value);
+                Q4 = parseInt(document.querySelector('input[name = "Q4"]:checked').value);
 
-                   
+
+                result = Q1 + Q2 + Q3 + Q4;
+
+
                 document.getElementById("grade").innerHTML = result;
-               
-                if (result == 0) {result2 = "Fail"};
-                if (result == 25) {result2 = "Fail"};
-                if (result == 50) {result2 = "Pass"};
-                if (result == 75) {result2 = "Pass"};
-                if (result == 100) {result2 = "Perfect"};
-                document.getElementById("grade2").innerHTML = result2; 
-                   
-            
-            
-            return false; // required to not refresh the page; just leave this here
+
+                if (result == 0) { result2 = "Fail" };
+                if (result == 25) { result2 = "Fail" };
+                if (result == 50) { result2 = "Pass" };
+                if (result == 75) { result2 = "Pass" };
+                if (result == 100) { result2 = "Perfect" };
+                document.getElementById("grade2").innerHTML = result2;
+
+
+
+                return false; // required to not refresh the page; just leave this here
             } //this ends the submit function
-            
-            </script>
-            
-            <!-- code based on code found on https://codeactually.com/interactivequiz.html, Cindy Royal 2018-->
-            
-        
-        
-        </body>
+
+        </script>
+
+        <!-- code based on code found on https://codeactually.com/interactivequiz.html, Cindy Royal 2018-->
+
+
+
+    </body>
 
 </body>
 </html>
